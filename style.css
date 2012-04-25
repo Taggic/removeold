@@ -1,0 +1,56 @@
+/* ----- General Elements ---------- */
+.it__negative_feedback {
+	border:            1px red solid;
+	background-color:          white;
+	margin:                      0px;
+	padding:                    10px;
+	width:                       60%;
+	border-radius:             0.5em;
+}
+.it__positive_feedback {
+	border:          1px green solid;
+	background-color:     lightgreen;
+	margin:                      0px;
+	padding:                    10px;
+	width:                       60%;
+	border-radius:             0.5em;
+}
+ .it__standard_feedback {
+	width:                      95%;
+  border:       1px solid #C0C0C0;
+  background: url("img/content-bg.jpg") repeat scroll 0 0 transparent;
+	padding:                    3px;
+  padding-left:            0.45em;
+	border-radius:              4px;
+}
+/* ----- Input Elements ---------- */
+div .removeold__divinput {
+  width:                      95%;
+  text-align :    left !important; 
+}
+
+ .removeold__fieldset {
+  width:         100% !important;
+  margin-bottom:   2em !important;
+  text-align:     left !important; 
+	border-radius:            0.5em;
+  float: left;
+}
+
+.removeold_edit {
+  width:            99% !important;
+  margin: 1em 1em 1em 0 !important;
+  font-size:        8pt !important;
+}
+
+.removeold_i_legend {
+  padding: 0 0.5em 0 0.5em !important;
+}
+
+div .removeold__divright {
+  text-align:               right;
+}
+
+.level4 p{
+width:             95% !important;
+}

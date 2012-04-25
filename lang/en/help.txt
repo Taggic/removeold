@@ -1,0 +1,13 @@
+=== Quick Help ===
+
+On this page you can delete all outdated files and folders of your DokuWiki to 
+reduce the space consumption on your web host. Simply copy/paste the content 
+from [[doku>install:upgrade#files_to_remove|Upgrade - Files to remove]] into the 
+text area below. Folders, which are empty after remove of outdated files will be 
+deleted also. Reading the [[doku>plugin:removeold|plugin description]] might 
+help your understanding of the functionality and delivering plugin update 
+information. \\ 
+
+We kindly want to remind that this plugin just works with the information provided 
+within the textarea. It cannot check if these files are really obsolete. Here we 
+rely on the infomation and good work provided by DokuWiki Core Development.
