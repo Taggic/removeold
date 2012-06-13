@@ -1,5 +1,5 @@
 /** 
-*  DeleteLang Admin Plugin: allows deleting of unneccessary language files and folders
+*  remove old Admin Plugin: allows deleting of unnecessary, outdated files from your DokuWiki system
 *
 * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
 * @author     Taggic <taggic@t-online.de>
@@ -7,10 +7,10 @@
 
 Intro
 ------ 
-This is an admin plugin available via admin manager to delete language files 
-and folders, which only consuming space but not used.
+This is an admin plugin available via admin manager to delete listed files 
+, which only consuming space but useless for your version.
 
 Installation
 ------------
- Just download and extract it as folder “rater” into your “\lib\plugins” 
+ Just download and extract it as folder "removeold" into your "\lib\plugins" 
  directory.

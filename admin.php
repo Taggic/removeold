@@ -104,7 +104,7 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
         global $ID;
 
         // load deleted.files from data folder and show it in textarea
-        $deleted_files = file_get_contents(DOKU_INC."data/deleted.files");
+        $deleted_files = file_get_contents(DOKU_INC."/".$conf["savedir"]."/deleted.files");
 
 
         echo '<div class="level4" id="removeold__input">'.$this->getLang('i_choose').'<br />'.NL;
@@ -228,7 +228,7 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
 /* logging of deleted files and deletion errors                               */
     function __removeold_logging($file, $result) {
       $timestamp = date('d/M/Y G:i:s');
-      $log_file = DOKU_INC.'data/tmp/removeold.log';
+      $log_file = DOKU_INC."/".$conf["savedir"].'/tmp/removeold.log';
       
       $record = "[".$timestamp."]".chr(9).$result.chr(9).chr(9).$file.chr(10);
       
