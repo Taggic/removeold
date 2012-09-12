@@ -227,9 +227,10 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
 /******************************************************************************/ 
 /* logging of deleted files and deletion errors                               */
     function __removeold_logging($file, $result) {
+      global $conf;
       $timestamp = date('d/M/Y G:i:s');
       $log_file = DOKU_INC."/".$conf["savedir"].'/tmp/removeold.log';
-      
+
       $record = "[".$timestamp."]".chr(9).$result.chr(9).chr(9).$file.chr(10);
       
       // Save logging records
