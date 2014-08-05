@@ -8,7 +8,7 @@
 $lang['admin_removeold']    = '古いファイルの削除';
 $lang['p_include']          = 'textarea に古いファイルの一覧をコピーしてください。';
 $lang['i_choose']           = 'misuse/mistakes を防ぐため、入力フィールドが空の場合は何もしません。<br />';
-$lang['i_legend']           = '<u><b>[[doku>ja:install:unused_files|未使用ファイル]]</b></u>の内容をここに入力してください。';
+$lang['i_legend']           = '<u><b><a href="http://www.dokuwiki.org/ja:install:unused_files" target="_blank">未使用ファイル</a></b></u>の内容をここに入力してください。';
 $lang['i_dryrun']           = 'シミュレートのみ';
 $lang['btn_start']          = '開始';
 $lang['removeold_willmsg']  = 'シミュレーション：ファイルは、以下のように処理されるでしょう。';
