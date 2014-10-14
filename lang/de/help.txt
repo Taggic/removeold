@@ -1,11 +1,11 @@
-﻿=== Kurzbeschreibung ===
+=== Kurzbeschreibung ===
 
 Mit hilfe dieser Seite können Sie Ihr DokuWiki System von den als veraltet 
 gelisteten Dateien befreien. Das spart ihnen nicht zuletzt auch Speicherplatz 
 auf Ihrem WebServer. Das Vorgehen ist ganz einfach. Das DokuWiki Kernentwicklerteam 
 veröffentlicht mit jeder neuen Version eine Liste der Dateien, die von System 
 entfernt werden sollten, da sie nicht mehr benutzt werden und nur unnötig Platz 
-verbrauchen. Die Liste finden Sie auf flgender Seite: [[doku>install:upgrade#files_to_remove|Upgrade - Files to remove]].
+verbrauchen. Die Liste finden Sie auf flgender Seite: [[https://raw.githubusercontent.com/splitbrain/dokuwiki/stable/data/deleted.files|GitHub: /dokuwiki/stable/data/deleted.files]].
 Kopieren Sie einfach den gesamten Inhalt der blauen Box (removeold.txt) und 
 fügen ihn in das unten befindliche Texteingabefeld. Als Nächstes sollten sie 
 einen Trokenlauf durchführen um ggf. noch Änderungen am System oder der Liste 

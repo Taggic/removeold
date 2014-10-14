@@ -8,7 +8,7 @@
 $lang['admin_removeold']    = 'Remove outdated files';
 $lang['p_include']          = 'Bitte kopieren sie die Liste der veralteten Datein in folgendes Textfeld.';
 $lang['i_choose']           = 'Ein leeres Eingabefeld hat keine Auswirkung auf Ihr System.<br />';
-$lang['i_legend']           = 'Inhalt von <u><b><a href="http://www.dokuwiki.org/install:upgrade#files_to_remove" target="_blank">removeold</a></b></u> - hier einfügen';
+$lang['i_legend']           = 'Inhalt von <u><b><a href="https://github.com/splitbrain/dokuwiki/raw/stable/data/deleted.files" target="_blank">removeold</a></b></u> - hier einfügen';
 $lang['i_dryrun']           = 'Simulation';
 $lang['btn_start']          = 'Start';
 $lang['removeold_willmsg']  = 'SIMULATION: Die Dateien würden wie folgt verarbeitet.';
