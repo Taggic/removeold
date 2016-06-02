@@ -104,29 +104,36 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
         global $ID;
 
         // load deleted.files from data folder and show it in textarea
-        $deleted_files = file_get_contents(DOKU_INC."/".$conf["savedir"]."/deleted.files");
+        if(is_dir($conf["savedir"])=== false) {
+            $deleted_files = file_get_contents(DOKU_INC."/".$conf["savedir"]."/deleted.files");
+        }
+        else $deleted_files = file_get_contents($conf["savedir"]."/deleted.files");
 
-
-        echo '<div class="level4" id="removeold__input">'.$this->getLang('i_choose').'<br />'.NL;
-        echo   '<div class="no">'.NL;
-        echo   '<fieldset class="removeold__fieldset"><legend class="removeold_i_legend">'.$this->getLang('i_legend').'</legend>'.NL;
-        echo      '<form action="'.wl($ID).'" method="post">';
-        echo          '<input type="hidden" name="do" value="admin" />'.NL;
-        echo          '<input type="hidden" name="page" value="removeold" />'.NL;
-        echo          '<input type="hidden" name="sectok" value="'.getSecurityToken().'" />'.NL;
-        echo          '<div class="removeold__divinput">';
-        echo            '<textarea type="text" name="removeold_w" class="edit removeold_edit" value="'.$_REQUEST['removeold_w'].'" rows="20" cols="50" />'.$deleted_files.'</textarea><br />'.NL;
-        echo            '<input type="checkbox" name="dryrun" checked="checked">&nbsp;'.$this->getLang('i_dryrun').'&nbsp;</input><br />'.NL;
-        echo            '<input type="checkbox" name="summary_only" >&nbsp;'.$this->getLang('summary_option').'&nbsp;</input><br />'.NL;
-        echo            '<div class="removeold__divright">';
-        echo              '<input type="submit" value="'.$this->getLang('btn_start').'" class="button"/>';
-        echo            '</div>'.NL;
-        echo          '</div>'.NL;
-        echo      '</form>'.NL;
-        echo   '</fieldset>';
-        echo   '</div>'.NL;
-        echo '</div>'.NL;
-        echo '<div style="clear:both"></div>'.NL;
+        if(is_file($deleted_files) !== false) {
+            echo '<div class="level4" id="removeold__input">'.$this->getLang('i_choose').'<br />'.NL;
+            echo   '<div class="no">'.NL;
+            echo   '<fieldset class="removeold__fieldset"><legend class="removeold_i_legend">'.$this->getLang('i_legend').'</legend>'.NL;
+            echo      '<form action="'.wl($ID).'" method="post">';
+            echo          '<input type="hidden" name="do" value="admin" />'.NL;
+            echo          '<input type="hidden" name="page" value="removeold" />'.NL;
+            echo          '<input type="hidden" name="sectok" value="'.getSecurityToken().'" />'.NL;
+            echo          '<div class="removeold__divinput">';
+            echo            '<textarea type="text" name="removeold_w" class="edit removeold_edit" value="'.$_REQUEST['removeold_w'].'" rows="20" cols="50" />'.$deleted_files.'</textarea><br />'.NL;
+            echo            '<input type="checkbox" name="dryrun" checked="checked">&nbsp;'.$this->getLang('i_dryrun').'&nbsp;</input><br />'.NL;
+            echo            '<input type="checkbox" name="summary_only" >&nbsp;'.$this->getLang('summary_option').'&nbsp;</input><br />'.NL;
+            echo            '<div class="removeold__divright">';
+            echo              '<input type="submit" value="'.$this->getLang('btn_start').'" class="button"/>';
+            echo            '</div>'.NL;
+            echo          '</div>'.NL;
+            echo      '</form>'.NL;
+            echo   '</fieldset>';
+            echo   '</div>'.NL;
+            echo '</div>'.NL;
+            echo '<div style="clear:both"></div>'.NL;
+        }
+        else {
+          msg("File not found: ".$deleted_files,-1);
+        }
     }
     
 /******************************************************************************/
@@ -229,8 +236,11 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
     function __removeold_logging($file, $result) {
       global $conf;
       $timestamp = date('d/M/Y G:i:s');
-      $log_file = DOKU_INC."/".$conf["savedir"].'/tmp/removeold.log';
-
+      if(is_dir($conf["savedir"])=== false) {
+        $log_file = DOKU_INC."/".$conf["savedir"].'/tmp/removeold.log';
+      }
+      else $log_file = $conf["savedir"].'/tmp/removeold.log';
+      
       $record = "[".$timestamp."]".chr(9).$result.chr(9).chr(9).$file.chr(10);
       
       // Save logging records
