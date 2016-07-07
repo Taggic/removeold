@@ -109,7 +109,7 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
         }
         else $deleted_files = file_get_contents($conf["savedir"]."/deleted.files");
 
-        if(is_file($deleted_files) !== false) {
+        if($deleted_files !== "") {
             echo '<div class="level4" id="removeold__input">'.$this->getLang('i_choose').'<br />'.NL;
             echo   '<div class="no">'.NL;
             echo   '<fieldset class="removeold__fieldset"><legend class="removeold_i_legend">'.$this->getLang('i_legend').'</legend>'.NL;

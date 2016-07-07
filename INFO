@@ -2,7 +2,7 @@
 
 author  Taggic
 email   taggic@t-online.de
-date    2014-10-14
+date    2016-07-07
 name    removeold
 desc    to remove outdated files (https://raw.githubusercontent.com/splitbrain/dokuwiki/stable/data/deleted.files)
 url     https://www.dokuwiki.org/plugin:removeold
