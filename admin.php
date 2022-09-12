@@ -215,7 +215,7 @@ class admin_plugin_removeold extends DokuWiki_Admin_Plugin {
 # (see http://bugs.php.net/bug.php?id=27609) 
 # alternative function proposed on php.net:
     function is__writable($path) {
-        if ($path{strlen($path)-1}=='/')
+        if ($path[strlen($path)-1]=='/')
              return is__writable($path.uniqid(mt_rand()).'.tmp');
          
         if (file_exists($path)) {
