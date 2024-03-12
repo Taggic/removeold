@@ -5,7 +5,7 @@
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author Taggic <taggic@t-online.de>
  */
-$lang['admin_removeold']    = 'Remove outdated files';
+$lang['menu']    = 'Remove outdated files';
 $lang['p_include']          = 'Please copy the list of outdated files into the textarea.';
 $lang['i_choose']           = 'An empty input field will not cause any effect to prevent misuse/mistakes.<br />';
 $lang['i_legend']           = 'Insert the <u><b><a href="https://github.com/splitbrain/dokuwiki/raw/stable/data/deleted.files" target="_blank">removeold</a></b></u> - file content here';

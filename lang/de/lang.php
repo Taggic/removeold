@@ -5,7 +5,7 @@
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author Taggic <taggic@t-online.de>
  */
-$lang['admin_removeold']    = 'Remove outdated files';
+$lang['menu']    = 'Remove outdated files';
 $lang['p_include']          = 'Bitte kopieren sie die Liste der veralteten Datein in folgendes Textfeld.';
 $lang['i_choose']           = 'Ein leeres Eingabefeld hat keine Auswirkung auf Ihr System.<br />';
 $lang['i_legend']           = 'Inhalt von <u><b><a href="https://github.com/splitbrain/dokuwiki/raw/stable/data/deleted.files" target="_blank">removeold</a></b></u> - hier einfügen';

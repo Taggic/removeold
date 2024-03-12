@@ -10,52 +10,15 @@ use dokuwiki\Extension\AdminPlugin;
  */
 class admin_plugin_removeold extends AdminPlugin
 {
-    /**
-     * return some info
-     */
-    public function getInfo()
-    {
-        return confToHash(__DIR__ . '/plugin.info.txt');
-    }
+
+
 
     /**
-     * return prompt for admin menu
-     */
-    public function getMenuText($language)
-    {
-        return $this->getLang('admin_removeold');
-    }
-
-    /**
-     * return sort order for position in admin menu
-     */
-    public function getMenuSort()
-    {
-        return 20;
-    }
-
-    /**
-     * handle user request
-     *
-     * Initializes internal vars and handles modifications
-     *
-     * @author Taggic <taggic@t-online.de>
-     */
-    public function handle()
-    {
-        global $ID;
-    }
-
-    /**
-     * removeold Output function
-     *
-     * print a table with all found lanuage folders
-     *
-     * @author  Taggic <taggic@t-online.de>
+     * @inheritdoc
+     * print a table with all found language folders
      */
     public function html()
     {
-        global $ID;
 
         echo '<div id="removeold__manager">' . NL;
         echo '<h1>' . $this->getLang('admin_removeold') . '</h1>' . NL;
