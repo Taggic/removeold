@@ -1,9 +1,7 @@
-# PLUGIN INFO - DO NOT EDIT!
-
 base    removeold
 author  Taggic
 email   taggic@t-online.de
 date    2016-07-07
 name    removeold
-desc    to remove outdated files (https://raw.githubusercontent.com/splitbrain/dokuwiki/stable/data/deleted.files)
+desc    This is an admin plugin to remove outdated files
 url     https://www.dokuwiki.org/plugin:removeold
