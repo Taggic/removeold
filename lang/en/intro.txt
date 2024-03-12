@@ -1,0 +1,5 @@
+====== Remove outdated files ======
+
+This plugin allows you to removed outdated files from the DokuWiki core as well as from all installed extensions.
+
+Running this is usually only needed when you did manual updates or installations.
