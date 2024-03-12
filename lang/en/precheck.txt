@@ -1,0 +1,1 @@
+Below you can see a simulation of files that would be deleted. Check if everything looks fine, then hit the button to actually delete the files.

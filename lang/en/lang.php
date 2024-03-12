@@ -22,3 +22,9 @@ $lang['deleted']            = 'Files deleted';
 $lang['delError']           = '<span style="color:red;">! ERROR ! </span>';
 $lang['erased']             = 'Cache erased';
 $lang['ro_err_msg']         = '<b>LOG WRITE ERROR !</b> Can\'t write to the log file.';
+
+$lang['button']             = 'Delete obsolete files!';
+$lang['rm_notfound']        = 'Not found: %s';
+$lang['rm_mismatch']        = 'Case mismatch: %s';
+$lang['rm_done']            = 'Deleted: %s';
+$lang['rm_fail']            = 'Failed to delete: %s';
